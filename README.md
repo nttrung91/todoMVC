@@ -36,3 +36,17 @@ FrontEnd:
 
 1. A file upload
 2. A view to list all products
+
+## Techstacks
+
+### FrontEnd
+
+- NextJS
+- React
+- React-query
+- TypeScript
+
+### Backend
+
+- GraphQL
+- Airtable
