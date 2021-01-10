@@ -42,42 +42,23 @@ let ItemResolver = class ItemResolver {
     items(_limit, _cursor) {
         return __awaiter(this, void 0, void 0, function* () {
             const itemList = [];
-            let table;
-            console.log('1');
             try {
-                table = yield base_1.itemTable
+                yield base_1.itemTable
                     .select({
                     fields: ["id", "name", "price"],
                     view: "Grid view"
-                });
-                console.log('2');
-            }
-            catch (err) {
-                return {
-                    items: [],
-                    hasMore: false
-                };
-            }
-            try {
-                yield table.firstPage((err, records) => {
-                    if (err) {
-                        console.log(err);
-                        return;
-                    }
-                    console.log('3');
-                    records.forEach((record) => {
+                }).firstPage().then((results) => {
+                    results.forEach((record) => {
                         itemList.push(record.fields);
                     });
                 });
             }
             catch (err) {
-                console.log(err);
                 return {
                     items: [],
                     hasMore: false
                 };
             }
-            console.log('4');
             return {
                 items: itemList,
                 hasMore: false

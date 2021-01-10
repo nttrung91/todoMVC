@@ -38,53 +38,29 @@ export class ItemResolver {
     // }
 
     const itemList: any = [];
-    let table;
-
-    console.log('1');
 
 
     try {
-
-      table = await itemTable
+      await itemTable
         .select({
           fields: ["id", "name", "price"],
           view: "Grid view"
+        }).firstPage().then((results: any) => {
+          results.forEach((record: any) => {
+            itemList.push(record.fields);
+          });
         })
-      console.log('2');
     } catch (err) {
       return {
         items: [],
         hasMore: false
       };
     }
-
-    try {
-      await table.firstPage((err: Error, records: any) => {
-        if (err) {
-          console.log(err);
-          return;
-        }
-        console.log('3');
-
-        records.forEach((record: any) => {
-          itemList.push(record.fields);
-        });
-      })
-    } catch (err) {
-      console.log(err);
-
-      return {
-        items: [],
-        hasMore: false
-      };
-    }
-
-    console.log('4');
 
     return {
       items: itemList,
       hasMore: false
-    };
+    }
   }
 
   // @Query(() => Item, { nullable: true }) // Return single item or null if not found
