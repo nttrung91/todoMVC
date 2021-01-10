@@ -23,6 +23,7 @@ class PaginatedItems {
 @Resolver(Item)
 export class ItemResolver {
   @Query(() => PaginatedItems) // Return array of posts
+
   async items(
     @Arg("limit", () => Int) _limit: number,
     @Arg("cursor", () => String, { nullable: true }) _cursor: string | null
@@ -36,28 +37,52 @@ export class ItemResolver {
     //   replacements.push(new Date(parseInt(cursor)));
     // }
 
-    const items: any = Array();
+    const itemList: any = [];
+    let table;
 
-    await itemTable
-      .select({
-        fields: ["id", "name", "price"],
-        view: "Grid view"
-      })
-      .firstPage((err: Error, records: any) => {
+    console.log('1');
+
+
+    try {
+
+      table = await itemTable
+        .select({
+          fields: ["id", "name", "price"],
+          view: "Grid view"
+        })
+      console.log('2');
+    } catch (err) {
+      return {
+        items: [],
+        hasMore: false
+      };
+    }
+
+    try {
+      await table.firstPage((err: Error, records: any) => {
         if (err) {
           console.log(err);
           return;
         }
+        console.log('3');
 
         records.forEach((record: any) => {
-          items.push(record.fields);
+          itemList.push(record.fields);
         });
-      });
+      })
+    } catch (err) {
+      console.log(err);
 
-    console.log(items);
+      return {
+        items: [],
+        hasMore: false
+      };
+    }
+
+    console.log('4');
 
     return {
-      items: items,
+      items: itemList,
       hasMore: false
     };
   }
