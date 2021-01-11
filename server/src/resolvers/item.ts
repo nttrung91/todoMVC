@@ -22,45 +22,34 @@ class PaginatedItems {
 
 @Resolver(Item)
 export class ItemResolver {
-  @Query(() => PaginatedItems) // Return array of posts
-
+  @Query(() => PaginatedItems) // Return array of items
   async items(
-    @Arg("limit", () => Int) _limit: number,
-    @Arg("cursor", () => String, { nullable: true }) _cursor: string | null
+    @Arg("limit", () => Int) limit: number,
+    @Arg("cursor", () => String, { nullable: true }) cursor: string
   ): Promise<PaginatedItems | null> {
-    // const realLimit = Math.min(25, limit);
-    // const realLimitPlusPlus = realLimit + 1;
-
-    // const replacements: any[] = [realLimitPlusPlus];
-
-    // if (cursor) {
-    //   replacements.push(new Date(parseInt(cursor)));
-    // }
+    const limitPlusPlus = limit + 1;
 
     const itemList: any = [];
 
-
-    try {
-      await itemTable
-        .select({
-          fields: ["id", "name", "price"],
-          view: "Grid view"
-        }).firstPage().then((results: any) => {
-          results.forEach((record: any) => {
-            itemList.push(record.fields);
-          });
-        })
-    } catch (err) {
-      return {
-        items: [],
-        hasMore: false
-      };
-    }
+    await itemTable
+      .select({
+        pageSize: limitPlusPlus,
+        maxRecords: 500,
+        view: "Grid view",
+        sort: [{ field: "id", direction: "asc" }],
+        filterByFormula: `{id} > ${parseInt(cursor)}`
+      })
+      .firstPage()
+      .then((records: any) => {
+        records.forEach(function(record: any) {
+          itemList.push(record.fields);
+        });
+      });
 
     return {
-      items: itemList,
-      hasMore: false
-    }
+      items: itemList.slice(0, limit),
+      hasMore: itemList.length === limitPlusPlus
+    };
   }
 
   // @Query(() => Item, { nullable: true }) // Return single item or null if not found
