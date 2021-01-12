@@ -55,7 +55,7 @@ export class ItemUploaderResolver {
         })
         .on("end", () => {
           totalRes.forEach((itemBatch: [Item]) => {
-            itemTable.create(itemBatch, { typecast: true }, function(
+            itemTable.create(itemBatch, { typecast: true }, function (
               err: Error
             ) {
               if (err) {

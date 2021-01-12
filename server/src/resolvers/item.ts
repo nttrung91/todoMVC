@@ -37,10 +37,9 @@ export class ItemResolver {
   @Query(() => PaginatedItems) // Return array of items
   async items(
     @Arg("limit", () => Int) limit: number,
-    @Arg("cursor", () => String, { nullable: true }) cursor: string
+    @Arg("cursor", () => String, { nullable: true }) cursor: string = '0'
   ): Promise<PaginatedItems | null> {
     const limitPlusPlus = limit + 1;
-
     const itemList: any = [];
 
     await itemTable
@@ -53,7 +52,7 @@ export class ItemResolver {
       })
       .firstPage()
       .then((records: any) => {
-        records.forEach(function(record: any) {
+        records.forEach(function (record: any) {
           itemList.push(record.fields);
         });
       });

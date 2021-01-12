@@ -12,6 +12,7 @@
     "dev:server": "nodemon -e ts --exec \"yarn run compile:server\""
   },
   "dependencies": {
+    "@apollo/client": "^3.3.6",
     "@types/airtable": "^0.8.1",
     "@types/cors": "^2.8.9",
     "@types/express": "^4.17.9",
