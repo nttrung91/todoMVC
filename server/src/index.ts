@@ -1,11 +1,12 @@
-import express = require("express");
 import { ApolloServer } from "apollo-server-express";
 import cors from "cors";
+import express from "express";
 import session from "express-session";
 import "reflect-metadata"; // https://blog.logrocket.com/integrating-typescript-graphql/
 import { buildSchema } from "type-graphql";
 import { HelloResolver } from "./resolvers/hello";
 import { ItemResolver } from "./resolvers/item";
+import { ItemUploaderResolver } from "./resolvers/itemUpload";
 import { MyContext } from "./types";
 
 const main = async () => {
@@ -36,7 +37,7 @@ const main = async () => {
 
   const apolloServer = new ApolloServer({
     schema: await buildSchema({
-      resolvers: [HelloResolver, ItemResolver]
+      resolvers: [HelloResolver, ItemResolver, ItemUploaderResolver]
     }),
     context: ({ req, res }): MyContext => ({
       req,

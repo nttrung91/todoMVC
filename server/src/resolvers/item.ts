@@ -1,4 +1,12 @@
-import { Arg, Field, Int, ObjectType, Query, Resolver } from "type-graphql";
+import {
+  Arg,
+  Field,
+  Int,
+  Mutation,
+  ObjectType,
+  Query,
+  Resolver
+} from "type-graphql";
 import { Item } from "../entities/Item";
 import { itemTable } from "../utils/base";
 
@@ -7,10 +15,14 @@ import { itemTable } from "../utils/base";
 // @InputType()
 // class ItemInput {
 //   @Field()
-//   title: string;
+//   name: string;
 //   @Field()
 //   text: string;
 // }
+
+// @Arg("name", { nullable: true }) name: string, // id gets passed in as an argument into graphQL
+// @Arg("price", () => Int, { nullable: true }) price: number,
+// @Arg("inventory", { nullable: true }) inventory: string
 
 @ObjectType()
 class PaginatedItems {
@@ -52,61 +64,101 @@ export class ItemResolver {
     };
   }
 
-  // @Query(() => Item, { nullable: true }) // Return single item or null if not found
-  // post(@Arg("id", () => Int) id: number): Promise<Item | undefined> {
-  //   // return Post.findOne(id);
-  // }
+  @Query(() => Item, { nullable: true }) // Return single item or null if not found
+  async item(@Arg("id", () => Int) id: number): Promise<Item | null> {
+    let item = null;
 
-  // // Upload single item
-  // @Mutation(() => Item)
-  // async uploadItem(
-  //   @Arg("input") input: ItemInput,
-  //   @Ctx() { req }: MyContext
-  // ): Promise<Item> {
-  //   // return Post.create({
-  //   //   ...input,
-  //   //   creatorId: req.session.userId
-  //   // }).save();
-  // }
+    await itemTable
+      .select({
+        filterByFormula: `{id} = ${id}`
+      })
+      .firstPage()
+      .then((records: any) => {
+        item = records[0].fields;
+      })
+      .catch(_ => {
+        return null;
+      });
 
-  // // Batch upload items
-  // @Mutation(() => Boolean) // Returns boolean to indicate whether successfully batched upload items or not
-  // async uploadItems(
-  //   @Arg("input") input: ItemInput,
-  //   @Ctx() { req }: MyContext
-  // ): Promise<boolean> {
-  //   // return Post.create({
-  //   //   ...input,
-  //   //   creatorId: req.session.userId
-  //   // }).save();
-  // }
+    return item;
+  }
 
-  // @Mutation(() => Item, { nullable: true }) // Return updated Item or null if post not found
-  // async updateItem(
-  //   @Arg("id", () => Int) id: number,
-  //   @Arg("title") title: string, // id gets passed in as an argument into graphQL
-  //   @Arg("text") text: string,
-  //   @Ctx() { req }: MyContext
-  // ): Promise<Item | null> {
-  //   // const result = await getConnection()
-  //   //   .createQueryBuilder()
-  //   //   .update(Post)
-  //   //   .set({ title, text })
-  //   //   .where('id = :id and "creatorId" = :creatorId', {
-  //   //     id,
-  //   //     creatorId: req.session.userId
-  //   //   })
-  //   //   .returning("*")
-  //   //   .execute();
-  //   // return result.raw[0];
-  // }
+  // Updates a single item
+  @Mutation(() => Item, { nullable: true }) // Return updated Item or null if post not found
+  async updateItem(
+    @Arg("id", () => Int) id: number,
+    @Arg("name", { nullable: true }) name: string, // id gets passed in as an argument into graphQL
+    @Arg("price", () => Int, { nullable: true }) price: number,
+    @Arg("inventory", { nullable: true }) inventory: string
+    // @Ctx() { req }: MyContext
+  ): Promise<Item | null> {
+    const updatedItems = { id, name, price, inventory };
+    let recordId: string | null = null;
+    let updatedRecord: Item | null = null;
 
-  // @Mutation(() => Boolean) // Return boolean indicating whether item has successfully been deleted
-  // async deleteItem(
-  //   @Arg("id", () => Int) id: number,
-  //   @Ctx() { req }: MyContext
-  // ): Promise<boolean> {
-  //   // await Post.delete({ id, creatorId: req.session.userId }); // ID that is specified and the person deleting is the owner of the post
-  //   // return true;
-  // }
+    await itemTable
+      .select({
+        filterByFormula: `{id} = ${id}`
+      })
+      .firstPage()
+      .then((records: any) => {
+        recordId = records[0].id;
+      })
+      .catch(_ => {
+        return null;
+      });
+
+    await itemTable
+      .update([{ id: recordId, fields: updatedItems }])
+      .then((records: any) => {
+        updatedRecord = records[0].fields;
+      })
+      .catch((err: Error) => {
+        console.log(
+          `There was an issue updating the entry to Airtable: ${err}`
+        );
+        return;
+      });
+
+    return updatedRecord;
+  }
+
+  @Mutation(() => Boolean) // Return boolean indicating whether item has successfully been deleted
+  async deleteItem(
+    @Arg("id", () => Int) id: number
+    // @Ctx() { req }: MyContext
+  ): Promise<boolean> {
+    let recordId: string | null = null;
+    let deleted: boolean = false;
+
+    await itemTable
+      .select({
+        filterByFormula: `{id} = ${id}`
+      })
+      .firstPage()
+      .then((records: any) => {
+        recordId = records[0].id;
+      })
+      .catch(_ => {
+        return null;
+      });
+
+    if (!recordId) {
+      return true; // Return true even if can't find id to dissuade hackers from continuing
+    }
+
+    await itemTable
+      .destroy([recordId])
+      .then(() => {
+        deleted = true;
+      })
+      .catch((err: Error) => {
+        console.log(
+          `There was an issue updating the entry to Airtable: ${err}`
+        );
+        return;
+      });
+
+    return deleted;
+  }
 }

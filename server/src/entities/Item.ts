@@ -1,18 +1,16 @@
 import { Field, ObjectType } from "type-graphql";
 
-@ObjectType() // Post can be of type entity and also be an object type (thereby having field as well)
+@ObjectType()
 export class Item {
-  // Extending BaseEntity allows us to do .find() and other basic commands
-
-  @Field() // Note that field exposes to graphQL schema
-  id!: number;
+  @Field()
+  readonly id!: number;
 
   @Field()
-  name!: string;
+  readonly name!: string;
 
   @Field()
-  price!: number;
+  readonly price!: number;
 
   @Field()
-  inventory!: string;
+  readonly inventory!: string;
 }

@@ -1,0 +1,501 @@
+id,name,price,inventory
+1,"American Financial Group, Inc.",7388,158
+2,"BioLife Solutions, Inc.",2957,46431
+3,"Barnes & Noble, Inc.",3706,04787
+4,Ultragenyx Pharmaceutical Inc.,731,26579
+5,Regions Financial Corporation,2948,70
+6,"Newpark Resources, Inc.",3766,9199
+7,"Telephone and Data Systems, Inc.",1276,442
+8,Orthofix International N.V.,6789,83858
+9,"Inter Parfums, Inc.",9950,26
+10,Enzymotec Ltd.,9796,5340
+11,Texas Instruments Incorporated,8281,29741
+12,"America Movil, S.A.B. de C.V.",2259,959
+13,Fidelity and Guaranty Life,5829,4687
+14,Western Asset Global High Income Fund Inc,6162,486
+15,iPath US Treasury 2-year Bear ETN,3427,07819
+16,LPL Financial Holdings Inc.,7822,08
+17,"O'Reilly Automotive, Inc.",3423,71289
+18,The Obesity ETF,7955,3
+19,"Everspin Technologies, Inc.",1747,8074
+20,"Mirati Therapeutics, Inc.",5136,669
+21,KB Financial Group Inc,3401,544
+22,Check Point Software Technologies Ltd.,4889,03720
+23,"Sunesis Pharmaceuticals, Inc.",9187,44
+24,U.S. Bancorp,5512,7
+25,CHS Inc,6941,4
+26,Cheetah Mobile Inc.,8625,29099
+27,"Prosperity Bancshares, Inc.",9189,47996
+28,Wipro Limited,3462,681
+29,Monroe Capital Corporation,966,6457
+30,The Medicines Company,277,55124
+31,Huntington Bancshares Incorporated,1041,3680
+32,"Sunstone Hotel Investors, Inc.",2092,8962
+33,Guggenheim Taxable Municipal Managed Duration Trst,7349,975
+34,STMicroelectronics N.V.,1740,1174
+35,"Intrepid Potash, Inc",1269,2174
+36,Global Medical REIT Inc.,1384,71
+37,Public Storage,9473,29
+38,Travelzoo,1869,8858
+39,PCSB Financial Corporation,4907,9946
+40,Lincoln Educational Services Corporation,212,3
+41,Huntsman Corporation,6528,52
+42,Huron Consulting Group Inc.,9552,8
+43,"DHT Holdings, Inc.",984,6
+44,"Valhi, Inc.",9402,4
+45,VictoryShares International Volatility Wtd ETF,1937,01
+46,"Ultra Clean Holdings, Inc.",7658,74231
+47,"SK Telecom Co., Ltd.",2785,4999
+48,Lonestar Resources US Inc.,6573,0237
+49,Ternium S.A.,6177,66
+50,Lehman ABS Corporation,1852,91
+51,Gabelli Global Small and Mid Cap Value Trust (The),1315,80
+52,"Gaming and Leisure Properties, Inc.",9280,193
+53,Teekay Offshore Partners L.P.,6896,08474
+54,"Eldorado Resorts, Inc.",8319,74276
+55,Cray Inc,9922,16851
+56,"NextEra Energy, Inc.",6928,93830
+57,Energen Corporation,5377,61
+58,Aflac Incorporated,9852,346
+59,"Royce Value Trust, Inc.",285,45
+60,"MacroGenics, Inc.",2665,528
+61,Rosetta Stone,341,256
+62,First Trust Mega Cap AlphaDEX Fund,9902,59
+63,SPX Corporation,2532,45402
+64,"Zynerba Pharmaceuticals, Inc.",1793,08394
+65,China Auto Logistics Inc.,2831,854
+66,Western Union Company (The),7984,13227
+67,"Tyson Foods, Inc.",669,9
+68,Axar Acquisition Corp.,9407,03
+69,Tuniu Corporation,1583,43
+70,"Team, Inc.",5293,3
+71,1st Constitution Bancorp (NJ),5471,16493
+72,United Technologies Corporation,9234,701
+73,OncoSec Medical Incorporated,8620,7
+74,"RigNet, Inc.",4998,727
+75,"Truett-Hurst, Inc.",9324,518
+76,Senior Housing Properties Trust,9210,646
+77,"Korea Equity Fund, Inc.",6339,7214
+78,Vertex Pharmaceuticals Incorporated,9428,7395
+79,Colonial Intermediate High Income Fund,679,7194
+80,"Sinclair Broadcast Group, Inc.",4349,9
+81,Noodles & Company,9175,81
+82,Sony Corp Ord,6984,29
+83,Mistras Group Inc,5215,93538
+84,"Schneider National, Inc.",7788,3
+85,Allstate Corporation (The),6782,0954
+86,"Blackrock MuniYield California Fund, Inc.",9570,36709
+87,Fairmount Santrol Holdings Inc.,434,7830
+88,AirMedia Group Inc,375,0
+89,Brixmor Property Group Inc.,8768,4
+90,"DWS High Income Opportunities Fund, Inc.",4813,546
+91,Westlake Chemical Partners LP,4610,8055
+92,The9 Limited,9565,9889
+93,MFC Bancorp Ltd.,8723,9234
+94,American Homes 4 Rent,5948,64
+95,Brown Forman Corporation,9919,98
+96,"Dominion Energy, Inc.",6296,5885
+97,Main Street Capital Corporation,323,054
+98,Aegon NV,146,05
+99,"ViewRay, Inc.",8658,5855
+100,"China Information Technology, Inc.",4101,47635
+101,Bright Horizons Family Solutions Inc.,9393,932
+102,"Reven Housing REIT, Inc.",3763,2
+103,iShares 20+ Year Treasury Bond ETF,2695,19
+104,Franklin Covey Company,2624,23839
+105,Alliance Data Systems Corporation,9638,75
+106,Dollar General Corporation,3606,320
+107,"BCB Bancorp, Inc. (NJ)",9846,91
+108,Farmers National Banc Corp.,2804,35740
+109,St. Joe Company (The),2908,822
+110,J P Morgan Chase & Co,6080,96790
+111,Barington/Hilco Acquisition Corp.,3471,42322
+112,Vanguard Russell 1000 ETF,8683,60
+113,Western Asset/Claymore U.S. Treasury Inflation Prot Secs Fd,7726,93
+114,"FuelCell Energy, Inc.",7664,5259
+115,Independent Bank Corp.,4612,42040
+116,Arbor Realty Trust,2705,274
+117,"ABAXIS, Inc.",1651,00153
+118,Attunity Ltd.,5006,9
+119,"Black Diamond, Inc.",6379,09
+120,Snap Inc.,9423,19010
+121,"Epizyme, Inc.",6040,64
+122,"Qorvo, Inc.",473,69
+123,Glaukos Corporation,6781,3829
+124,"Community Trust Bancorp, Inc.",7434,32077
+125,RXi Pharmaceuticals Corporation,3123,56
+126,"Summit Hotel Properties, Inc.",1574,35396
+127,The KEYW Holding Corporation,5830,689
+128,"JAKKS Pacific, Inc.",2355,4
+129,"General Communication, Inc.",5952,5956
+130,Lianluo Smart Limited,2641,5627
+131,CombiMatrix Corporation,1559,65
+132,Mountain Province Diamonds Inc.,405,0775
+133,"Mattel, Inc.",9429,9
+134,"Coherus BioSciences, Inc.",7906,751
+135,Celgene Corporation,183,80
+136,Valley National Bancorp,8216,46814
+137,Loews Corporation,8505,7945
+138,"Monro Muffler Brake, Inc.",2483,2
+139,OGE Energy Corporation,9358,081
+140,AZZ Inc.,7580,611
+141,Amerco,9689,1
+142,Companhia Paranaense de Energia (COPEL),5779,607
+143,"Prudential Financial, Inc.",4989,824
+144,"HFF, Inc.",2972,994
+145,NutriSystem Inc,6980,7
+146,"ARMOUR Residential REIT, Inc.",7750,6
+147,"Equinix, Inc.",6947,2
+148,Global X Internet of Things ETF,5523,86734
+149,Aehr Test Systems,2748,6505
+150,Walter Investment Management Corp.,396,96
+151,Hyatt Hotels Corporation,8132,2
+152,"Del Taco Restaurants, Inc.",2453,82989
+153,"Office Depot, Inc.",4128,429
+154,Pioneer High Income Trust,6936,3
+155,J P Morgan Chase & Co,9824,8
+156,Alere Inc.,3003,2993
+157,Endeavour Silver Corporation,4127,75620
+158,Zosano Pharma Corporation,6529,3037
+159,"Midland States Bancorp, Inc.",6776,7814
+160,Virtus Global Multi-Sector Income Fund,1692,866
+161,"Vmware, Inc.",2309,15
+162,"Golub Capital BDC, Inc.",1467,246
+163,Kennedy-Wilson Holdings Inc.,7966,591
+164,PowerShares DWA Momentum Portfolio,4470,495
+165,Immersion Corporation,8472,43914
+166,"Regeneron Pharmaceuticals, Inc.",3572,37108
+167,"Twin Disc, Incorporated",5684,77311
+168,First Trust NASDAQ Clean Edge Smart Grid Infrastructure Index ,6481,92521
+169,Acadia Realty Trust,5007,58197
+170,WisdomTree Strategic Corporate Bond Fund,8226,54
+171,Medley LLC,3778,55
+172,"Blackrock MuniHoldings Fund, Inc.",7744,149
+173,Jacobs Engineering Group Inc.,9199,9
+174,"RiverNorth Opportunities Fund, Inc.",2230,465
+175,Chesapeake Utilities Corporation,3931,60030
+176,Career Education Corporation,3271,01
+177,"Kona Grill, Inc.",2964,5220
+178,"CDK Global, Inc.",452,14864
+179,BiondVax Pharmaceuticals Ltd.,6124,457
+180,ROBO Global Robotics and Automation Index ETF,8980,94375
+181,Minerals Technologies Inc.,6208,75049
+182,Eastman Kodak Company,8052,98634
+183,Black Hills Corporation,5465,594
+184,"Celldex Therapeutics, Inc.",2892,18007
+185,Performant Financial Corporation,2907,68020
+186,"China Natural Resources, Inc.",4035,7
+187,Capstead Mortgage Corporation,9726,830
+188,"Square, Inc.",8270,28
+189,"MabVax Therapeutics Holdings, Inc.",7881,344
+190,"Blackrock MuniYield California Insured Fund, Inc.",3049,3
+191,Blackstone / GSO Strategic Credit Fund,5423,5066
+192,"Gardner Denver Holdings, Inc.",8579,90
+193,PolyOne Corporation,5472,178
+194,Diana Shipping inc.,5486,9948
+195,Marlin Business Services Corp.,7181,8442
+196,Incyte Corporation,364,50529
+197,"Archrock, Inc.",7803,3218
+198,Vident International Equity Fund,8524,72
+199,Hunter Maritime Acquisition Corp.,6180,5
+200,"Mid-Con Energy Partners, LP",1422,08
+201,"Brookline Bancorp, Inc.",7228,404
+202,Cato Corporation (The),9098,7117
+203,Deutsche Bank AG,7077,808
+204,"Idera Pharmaceuticals, Inc.",8765,67656
+205,AT&T Inc.,6127,35
+206,VictoryShares International High Div Volatility Wtd ETF,1850,2701
+207,"LSC Communications, Inc.",9162,317
+208,Rayonier Advanced Materials Inc.,2370,60
+209,"Key Energy Services, Inc.",449,41
+210,"Donegal Group, Inc.",2166,7826
+211,Gladstone Investment Corporation,4001,41372
+212,"Trinity Industries, Inc.",6339,547
+213,AdvisorShares Market Adaptive Unconstrained Income ETF,2459,75
+214,M&T Bank Corporation,3176,65853
+215,CyberArk Software Ltd.,8218,31
+216,"Atlantic Capital Bancshares, Inc.",436,13090
+217,"MRV Communications, Inc.",6290,14
+218,Navios Maritime Acquisition Corporation,4981,609
+219,First Trust Strategic Income ETF,4265,83398
+220,Nuveen Insured New York Select Tax-Free Income Portfolio,2503,8941
+221,Piper Jaffray Companies,3702,703
+222,Assured Guaranty Ltd.,6579,77
+223,Federal Realty Investment Trust,5994,5
+224,"Mota Group, Inc.",1965,20
+225,"CF Industries Holdings, Inc.",4351,9541
+226,"Hercules Capital, Inc.",1692,28
+227,News Corporation,8790,069
+228,Express Scripts Holding Company,8521,72
+229,Robert Half International Inc.,3779,4
+230,Genpact Limited,9973,24799
+231,First Trust BICK Index Fund,2465,0594
+232,WisdomTree Barclays Interest Rate Hedged U.S. Aggregate Bond F,7704,306
+233,AmerisourceBergen Corporation (Holding Co),664,06
+234,Regis Corporation,1982,8
+235,Enel Generacion Chile S.A.,2117,53
+236,"Xencor, Inc.",6829,83
+237,Federated Premier Intermediate Municipal Income Fund,4990,2
+238,"Advaxis, Inc.",8364,4
+239,"Lincoln Electric Holdings, Inc.",2059,06571
+240,KBS Fashion Group Limited,2495,95
+241,Lincoln National Corporation,6334,9278
+242,"Hanwha Q CELLS Co., Ltd. ",5262,3
+243,Entercom Communications Corporation,6164,78779
+244,"Equinix, Inc.",6375,41
+245,"Invuity, Inc.",8754,1971
+246,"Morgan Stanley India Investment Fund, Inc.",4,42629
+247,Tellurian Inc.,5903,637
+248,"United Dominion Realty Trust, Inc.",9263,05
+249,Orthofix International N.V.,8981,965
+250,"CenterPoint Energy, Inc.",9122,675
+251,"Compass Minerals International, Inc.",4006,82678
+252,Globant S.A.,2152,79
+253,VictoryShares US 500 Volatility Wtd ETF,1062,218
+254,A.H. Belo Corporation,5820,93
+255,KB Financial Group Inc,2200,923
+256,B Communications Ltd.,3367,800
+257,Vanguard Total International Bond ETF,3084,3
+258,Bank of Marin Bancorp,4485,73210
+259,"EastGroup Properties, Inc.",3153,9618
+260,"Sierra Wireless, Inc.",6243,361
+261,Statoil ASA,5126,4
+262,Eaton Vance Tax-Managed Global Diversified Equity Income Fund,9124,0288
+263,"THL Credit, Inc.",6149,3
+264,Dynavax Technologies Corporation,8959,03
+265,Kimco Realty Corporation,8949,2
+266,"Powell Industries, Inc.",2932,371
+267,CABCO Series 2004-101 Trust,4196,9
+268,Global X Social Media ETF,3063,30254
+269,Yulong Eco-Materials Limited,4885,81172
+270,"Rave Restaurant Group, Inc.",8642,91
+271,Liberty Global plc,7119,145
+272,Blueprint Medicines Corporation,4495,9643
+273,"ViewRay, Inc.",5066,045
+274,Momo Inc.,3619,7207
+275,"MINDBODY, Inc.",6002,4535
+276,Federal Agricultural Mortgage Corporation,6453,722
+277,"Genocea Biosciences, Inc.",1376,73999
+278,"CalAtlantic Group, Inc.",60,4827
+279,Dynegy Inc.,6304,99715
+280,Halcon Resources Corporation,6437,7841
+281,"Aethlon Medical, Inc.",3588,91
+282,"Gartner, Inc.",2841,01577
+283,M B T Financial Corp,4722,30
+284,Envision Healthcare Corporation,9264,71
+285,PowerShares DWA Emerging Markets Momentum Portfolio,7360,3
+286,"Itron, Inc.",7949,74
+287,"ServisFirst Bancshares, Inc.",1970,92496
+288,China Online Education Group,5211,854
+289,"Equus Total Return, Inc.",739,617
+290,"Celadon Group, Inc.",5550,3
+291,"Tilly's, Inc.",4525,5756
+292,Boyd Gaming Corporation,5797,612
+293,"New York Mortgage Trust, Inc.",8850,879
+294,Tesoro Logistics LP,1115,127
+295,Wayne Savings Bancshares Inc.,2081,238
+296,"RiverNorth/DoubleLine Strategic Opportunity Fund, Inc.",9036,615
+297,Nordic American Tankers Limited,9034,2870
+298,"Etsy, Inc.",4557,215
+299,John Hancock Financial Opportunities Fund,2086,4
+300,"Supernus Pharmaceuticals, Inc.",3615,91
+301,Vident Core U.S. Bond Strategy Fund,9794,5
+302,Sparton Corporation,2540,84
+303,First Trust NASDAQ Smartphone Index Fund,5211,73383
+304,Snap-On Incorporated,335,1422
+305,Colgate-Palmolive Company,2335,7811
+306,"Goldman Sachs Group, Inc. (The)",7442,26
+307,"Asia Pacific Fund, Inc. (The)",5354,74509
+308,Ambev S.A.,8679,8
+309,"CASI Pharmaceuticals, Inc.",4228,9
+310,"ARCA biopharma, Inc.",8851,83
+311,Verizon Communications Inc.,8240,2993
+312,"Gabelli Equity Trust, Inc. (The)",6573,3
+313,Gabelli Utility Trust (The),4968,601
+314,Teekay LNG Partners L.P.,1199,4
+315,Jensyn Acquistion Corp.,8007,57297
+316,"Franklin Resources, Inc.",623,13
+317,Principal U.S. Small Cap Index ETF,8139,9125
+318,Sotherly Hotels LP,143,597
+319,Lennar Corporation,9925,55889
+320,New Age Beverages Corporation,8467,2
+321,Camden National Corporation,9657,0407
+322,Seneca Foods Corp.,4103,40
+323,Tennant Company,2575,5442
+324,Southern Company (The),2985,80197
+325,Amgen Inc.,5174,99
+326,FB Financial Corporation,1604,8796
+327,"Walker & Dunlop, Inc.",8645,0435
+328,Olin Corporation,6944,86981
+329,Realty Income Corporation,3339,89628
+330,"First Savings Financial Group, Inc.",477,4309
+331,Dana Incorporated,1998,1
+332,"Crossroads Systems, Inc.",1707,37044
+333,MiX Telematics Limited,303,54
+334,Gilat Satellite Networks Ltd.,1420,78113
+335,"Impax Laboratories, Inc.",3684,450
+336,"Heartland Financial USA, Inc.",9676,5
+337,National General Holdings Corp,3138,8752
+338,"James River Group Holdings, Ltd.",3480,87382
+339,GasLog Partners LP,4169,272
+340,Citigroup Inc.,6442,14311
+341,Yamana Gold Inc.,3271,92626
+342,SemiLEDS Corporation,9871,01
+343,"Blucora, Inc.",897,2236
+344,Logitech International S.A.,4024,627
+345,RPX Corporation,1324,291
+346,"Select Energy Services, Inc.",6480,0238
+347,National Beverage Corp.,3201,60
+348,State Street Corporation,9164,19375
+349,First Trust NASDAQ Cybersecurity ETF,7971,7806
+350,"Stanley Black & Decker, Inc.",627,216
+351,Oak Valley Bancorp (CA),9496,5
+352,"Soleno Therapeutics, Inc.",2063,3893
+353,Vornado Realty Trust,7265,32578
+354,Telecom Italia S.P.A.,2354,9752
+355,Global X Yieldco Index ETF,7340,009
+356,Mercury Systems Inc,3353,6248
+357,General Finance Corporation,4721,9
+358,Orion Engineered Carbons S.A,2574,3186
+359,Pimco California Municipal Income Fund II,5921,5
+360,Boyd Gaming Corporation,4437,2
+361,TransMontaigne Partners L.P.,1132,07332
+362,Sequans Communications S.A.,2042,95134
+363,Bank of America Corporation,8271,671
+364,"MetLife, Inc.",1911,57788
+365,New York Times Company (The),1441,41160
+366,"Royce Value Trust, Inc.",6972,31
+367,"Wayside Technology Group, Inc.",751,6
+368,First Trust New Opportunities MLP & Energy Fund,717,05
+369,Voya Emerging Markets High Income Dividend Equity Fund,4161,963
+370,Scientific Games Corp,7874,61190
+371,"GAIN Capital Holdings, Inc.",265,41
+372,"Albany Molecular Research, Inc.",6238,9
+373,"ARMOUR Residential REIT, Inc.",5429,519
+374,Perrigo Company,7709,8
+375,"United Continental Holdings, Inc.",5112,68841
+376,Emmis Communications Corporation,7610,413
+377,Amec Plc Ord,9499,12604
+378,BlackRock Income Investment Quality Trust,1318,7241
+379,Leucadia National Corporation,9062,99
+380,"Southern National Bancorp of Virginia, Inc.",9810,187
+381,Asbury Automotive Group Inc,1373,92522
+382,"Zogenix, Inc.",2402,7
+383,"Farmers & Merchants Bancorp, Inc.",2121,2
+384,ABB Ltd,8430,7568
+385,"Prudential Financial, Inc.",3724,2286
+386,iPath US Treasury Long Bond Bull ETN,2991,16
+387,"ChinaNet Online Holdings, Inc.",8482,76638
+388,"China Ceramics Co., Ltd.",7099,1
+389,Pebblebrook Hotel Trust,311,7
+390,Research Frontiers Incorporated,6408,00160
+391,Amerco,7709,67
+392,"Armstrong Flooring, Inc.",9505,31460
+393,"Melrose Bancorp, Inc.",7090,39
+394,"Wheeler Real Estate Investment Trust, Inc.",8373,797
+395,"Rudolph Technologies, Inc.",4011,32
+396,Pzena Investment Management Inc,1982,02844
+397,"Ossen Innovation Co., Ltd.",421,35
+398,Independent Bank Corp.,2364,11539
+399,"Era Group, Inc.",2388,7
+400,Janus Henderson Small Cap Growth Alpha ETF,8870,5998
+401,"Quantenna Communications, Inc.",2612,8991
+402,"Stellar Biotechnologies, Inc.",4507,9
+403,"RPC, Inc.",8452,6676
+404,"Fusion Telecommunications International, Inc.",4543,43
+405,"Bellerophon Therapeutics, Inc.",1187,72345
+406,"The Chefs' Warehouse, Inc.",1583,7
+407,"Uranium Resources, Inc.",353,00240
+408,NorthWestern Corporation,8558,73
+409,Easterly Acquisition Corp.,3512,8432
+410,"Maiden Holdings, Ltd.",4342,07
+411,RPX Corporation,8870,0253
+412,OFG Bancorp,6846,5646
+413,"China Jo-Jo Drugstores, Inc.",2148,6823
+414,Axovant Sciences Ltd.,9384,77
+415,Principal Healthcare Innovators Index ETF,9388,24892
+416,Great Elm Capital Corp.,1928,41755
+417,"On Assignment, Inc.",1630,1
+418,icad inc.,3665,989
+419,"ProPhase Labs, Inc.",7704,62612
+420,"Automatic Data Processing, Inc.",6271,5
+421,Medley Capital Corporation,3659,1
+422,Molina Healthcare Inc,326,9
+423,"PriceSmart, Inc.",5852,0150
+424,American Homes 4 Rent,6158,0
+425,The Middleby Corporation,2618,37
+426,Edwards Lifesciences Corporation,8353,94743
+427,"New Oriental Education & Technology Group, Inc.",3988,66
+428,"GAMCO Natural Resources, Gold & Income Tust ",7644,8
+429,"CSW Industrials, Inc.",9536,51
+430,China Lending Corporation,234,75
+431,"Akamai Technologies, Inc.",6642,7
+432,American Tower Corporation (REIT),834,0388
+433,"Cidara Therapeutics, Inc.",497,2
+434,DryShips Inc.,2591,0
+435,Capitol Acquisition Corp. III,15,868
+436,"PriceSmart, Inc.",6240,09534
+437,Bright Horizons Family Solutions Inc.,1206,6
+438,Compugen Ltd.,9354,90
+439,"Athersys, Inc.",6918,70
+440,Zhaopin Limited,69,73
+441,ACNB Corporation,759,140
+442,Aircastle Limited,4231,745
+443,"Cancer Genetics, Inc.",9803,5143
+444,Calamos Dynamic Convertible & Income Fund,1135,6
+445,WVS Financial Corp.,4539,4567
+446,Calamos Convertible and High Income Fund,1031,2
+447,J P Morgan Chase & Co,1318,301
+448,IPG Photonics Corporation,4525,9
+449,MagnaChip Semiconductor Corporation,2471,3
+450,"C.H. Robinson Worldwide, Inc.",7088,47
+451,"JD.com, Inc.",373,3674
+452,"MISONIX, Inc.",6278,4
+453,Diana Shipping inc.,1715,58
+454,Teekay LNG Partners L.P.,7140,312
+455,Sears Holdings Corporation,4014,030
+456,"Dave & Buster's Entertainment, Inc.",2853,7448
+457,International Bancshares Corporation,8591,675
+458,Tonix Pharmaceuticals Holding Corp.,1985,9
+459,"Crossroads Systems, Inc.",1337,2
+460,"Terra Nitrogen Company, L.P.",395,57
+461,"Selective Insurance Group, Inc.",3980,4434
+462,Fifth Third Bancorp,1485,60
+463,"S&T Bancorp, Inc.",1625,6282
+464,Nordic American Tankers Limited,8758,26766
+465,Kaman Corporation,6600,7
+466,"Innoviva, Inc.",8011,0303
+467,"Civista Bancshares, Inc. ",9255,89
+468,"Energizer Holdings, Inc.",8542,98317
+469,Resonant Inc.,7313,26
+470,iPath US Treasury Long Bond Bull ETN,1624,9908
+471,Peoples Bancorp Inc.,59,5
+472,Pennsylvania Real Estate Investment Trust,6977,208
+473,"NantKwest, Inc.",8694,66539
+474,Equity Commonwealth,5390,60
+475,Countrywide Financial Corporation,2627,64680
+476,"Fogo de Chao, Inc.",7824,65
+477,Hilton Grand Vacations Inc.,2163,93
+478,"Brocade Communications Systems, Inc.",8082,4708
+479,"Pier 1 Imports, Inc.",9730,9946
+480,"Gap, Inc. (The)",1866,51
+481,"Monster Digital, Inc.",8774,683
+482,Civeo Corporation,1678,494
+483,Adaptimmune Therapeutics plc,4050,8
+484,"Enviva Partners, LP",5036,48721
+485,"Novus Therapeutics, Inc.",162,56747
+486,"Superior Uniform Group, Inc.",3899,367
+487,Halliburton Company,5409,0951
+488,Public Storage,796,53782
+489,"Black Knight Financial Services, Inc.",4845,305
+490,Enterprise Financial Services Corporation,9974,08
+491,"OncoMed Pharmaceuticals, Inc.",9216,8648
+492,Barings Corporate Investors,5305,8169
+493,"WisdomTree Investments, Inc.",4293,3
+494,"Alaska Communications Systems Group, Inc.",144,07348
+495,Energen Corporation,1122,708
+496,Legacy Reserves LP,805,64
+497,"AnaptysBio, Inc.",2073,13
+498,Oil-Dri Corporation Of America,5072,9
+499,"KemPharm, Inc.",8650,69122
+500,Seaspan Corporation,5877,566

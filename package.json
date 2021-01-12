@@ -7,8 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "compile:server": "tsc --outDir ./server/dist && node ./server/dist/index.js",
-    "dev:server": "nodemon -e ts --exec \"npm run compile:server\""
+    "build:server": "tsc --outDir ./server/dist",
+    "compile:server": "tsc --outDir ./server/dist && node --trace-deprecation ./server/dist/index.js",
+    "dev:server": "nodemon -e ts --exec \"yarn run compile:server\""
   },
   "dependencies": {
     "@types/airtable": "^0.8.1",
@@ -19,9 +20,11 @@
     "apollo-server-express": "^2.19.1",
     "class-validator": "^0.12.2",
     "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
+    "fs-capacitor": "^6.2.0",
     "graphql": "^15.4.0",
     "next": "10.0.5",
     "react": "17.0.1",
@@ -35,5 +38,8 @@
     "nodemon": "^2.0.7",
     "typescript": "^4.1.3"
   },
-  "license": "MIT"
+  "resolutions": {
+    "fs-capacitor": "6.2.0"
+  },
+  "license": "ISC"
 }
