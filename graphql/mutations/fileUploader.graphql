@@ -1,0 +1,3 @@
+mutation uploadItemFile($file: Upload!) {
+  uploadItemFile(file: $file)
+}

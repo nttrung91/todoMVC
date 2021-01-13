@@ -1,23 +1,16 @@
-import Head from "next/head";
-import { useMutation, gql } from "@apollo/client";
-
 import styles from "../styles/Home.module.css";
+import { useUploadItemFileMutation } from "../generated/graphql";
+import { withApollo } from "../utils/withApollo";
 
-const SINGLE_UPLOAD = gql`
-  mutation uploadItemFile($file: Upload!) {
-    uploadItemFile(file: $file)
-  }
-`;
-
-export default function Home() {
-  const [upload, { loading, error }] = useMutation(SINGLE_UPLOAD, {
-    onCompleted: data => console.log(data)
-  });
+function Home() {
+  const [upload] = useUploadItemFileMutation();
 
   const handleFileChange = e => {
     const file = e.target.files[0];
 
-    console.log(file);
+    if (!file) {
+      return;
+    }
 
     upload({ variables: { file } });
   };
@@ -28,3 +21,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default withApollo({ ssr: false })(Home);

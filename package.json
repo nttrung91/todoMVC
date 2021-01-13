@@ -9,7 +9,8 @@
     "start": "next start",
     "build:server": "tsc --outDir ./server/dist",
     "compile:server": "tsc --outDir ./server/dist && node --trace-deprecation ./server/dist/index.js",
-    "dev:server": "nodemon -e ts --exec \"yarn run compile:server\""
+    "dev:server": "nodemon -e ts --exec \"yarn run compile:server\"",
+    "gen": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
     "@apollo/client": "^3.3.6",
@@ -28,13 +29,21 @@
     "express-session": "^1.17.1",
     "fs-capacitor": "^6.2.0",
     "graphql": "^15.4.0",
+    "graphql-tag": "^2.11.0",
+    "isomorphic-unfetch": "^3.1.0",
     "next": "10.0.5",
+    "next-apollo": "^5.0.4",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-is": "^17.0.1",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "^1.1.1"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^1.20.0",
+    "@graphql-codegen/typescript": "^1.20.0",
+    "@graphql-codegen/typescript-operations": "^1.17.13",
+    "@graphql-codegen/typescript-react-apollo": "^2.2.1",
     "@types/node": "^14.14.20",
     "@types/react": "^17.0.0",
     "nodemon": "^2.0.7",

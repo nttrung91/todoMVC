@@ -1,20 +1,7 @@
 import "../styles/globals.css";
-import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
-import { createUploadLink } from "apollo-upload-client";
-
-const client = new ApolloClient({
-  link: createUploadLink({
-    uri: "http://localhost:4000/graphql"
-  }),
-  cache: new InMemoryCache()
-});
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <ApolloProvider client={client}>
-      <Component {...pageProps} />
-    </ApolloProvider>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
