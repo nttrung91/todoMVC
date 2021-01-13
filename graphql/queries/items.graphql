@@ -1,0 +1,11 @@
+query Items($limit: Int!, $cursor: String) {
+  items(limit: $limit, cursor: $cursor) {
+    items {
+      id
+      name
+      price
+      inventory
+    }
+    hasMore
+  }
+}

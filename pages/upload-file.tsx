@@ -2,11 +2,11 @@ import styles from "../styles/Home.module.css";
 import { useUploadItemFileMutation } from "../generated/graphql";
 import { withApollo } from "../utils/withApollo";
 
-function Home() {
+const UploadFile: React.FC<{}> = ({}) => {
   const [upload] = useUploadItemFileMutation();
 
-  const handleFileChange = e => {
-    const file = e.target.files[0];
+  const handleFileChange = (e: React.FormEvent<HTMLInputElement>) => {
+    const file = e.currentTarget.files[0];
 
     if (!file) {
       return;
@@ -20,6 +20,6 @@ function Home() {
       <input type="file" required onChange={handleFileChange} />
     </div>
   );
-}
+};
 
-export default withApollo({ ssr: false })(Home);
+export default withApollo({ ssr: false })(UploadFile);

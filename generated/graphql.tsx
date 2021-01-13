@@ -83,6 +83,24 @@ export type UploadItemFileMutation = (
   & Pick<Mutation, 'uploadItemFile'>
 );
 
+export type ItemsQueryVariables = Exact<{
+  limit: Scalars['Int'];
+  cursor?: Maybe<Scalars['String']>;
+}>;
+
+
+export type ItemsQuery = (
+  { __typename?: 'Query' }
+  & { items: (
+    { __typename?: 'PaginatedItems' }
+    & Pick<PaginatedItems, 'hasMore'>
+    & { items: Array<(
+      { __typename?: 'Item' }
+      & Pick<Item, 'id' | 'name' | 'price' | 'inventory'>
+    )> }
+  ) }
+);
+
 
 export const UploadItemFileDocument = gql`
     mutation uploadItemFile($file: Upload!) {
@@ -114,3 +132,43 @@ export function useUploadItemFileMutation(baseOptions?: Apollo.MutationHookOptio
 export type UploadItemFileMutationHookResult = ReturnType<typeof useUploadItemFileMutation>;
 export type UploadItemFileMutationResult = Apollo.MutationResult<UploadItemFileMutation>;
 export type UploadItemFileMutationOptions = Apollo.BaseMutationOptions<UploadItemFileMutation, UploadItemFileMutationVariables>;
+export const ItemsDocument = gql`
+    query Items($limit: Int!, $cursor: String) {
+  items(limit: $limit, cursor: $cursor) {
+    items {
+      id
+      name
+      price
+      inventory
+    }
+    hasMore
+  }
+}
+    `;
+
+/**
+ * __useItemsQuery__
+ *
+ * To run a query within a React component, call `useItemsQuery` and pass it any options that fit your needs.
+ * When your component renders, `useItemsQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useItemsQuery({
+ *   variables: {
+ *      limit: // value for 'limit'
+ *      cursor: // value for 'cursor'
+ *   },
+ * });
+ */
+export function useItemsQuery(baseOptions: Apollo.QueryHookOptions<ItemsQuery, ItemsQueryVariables>) {
+        return Apollo.useQuery<ItemsQuery, ItemsQueryVariables>(ItemsDocument, baseOptions);
+      }
+export function useItemsLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<ItemsQuery, ItemsQueryVariables>) {
+          return Apollo.useLazyQuery<ItemsQuery, ItemsQueryVariables>(ItemsDocument, baseOptions);
+        }
+export type ItemsQueryHookResult = ReturnType<typeof useItemsQuery>;
+export type ItemsLazyQueryHookResult = ReturnType<typeof useItemsLazyQuery>;
+export type ItemsQueryResult = Apollo.QueryResult<ItemsQuery, ItemsQueryVariables>;
